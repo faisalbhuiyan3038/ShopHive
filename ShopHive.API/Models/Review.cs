@@ -9,13 +9,13 @@ namespace ShopHive.API.Models
         [ForeignKey("User")]
         public int UserId { get; set; }
 
-        [InverseProperty("Reviews")]
+        [InverseProperty("ReviewUsers")]
         public User User { get; set; }
 
         [ForeignKey("Product")]
         public int ProductId { get; set; }
 
-        [InverseProperty("Reviews1")]
+        [InverseProperty("ReviewsProducts")]
         public Product Product { get; set; }
 
         public int Rating { get; set; }

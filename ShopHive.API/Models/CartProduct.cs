@@ -9,13 +9,13 @@ namespace ShopHive.API.Models
         [ForeignKey("Cart")]
         public int CartId { get; set; }
 
-        [InverseProperty("CartProducts")]
+        [InverseProperty("Carts")]
         public Cart Cart { get; set; }
 
         [ForeignKey("Product")]
         public int ProductId { get; set; }
 
-        [InverseProperty("CartProduct1")]
+        [InverseProperty("CartProducts")]
         public Product Product { get; set; } 
 
         public int Quantity { get; set; }

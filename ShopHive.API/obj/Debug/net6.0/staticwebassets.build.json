@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "d9tMbgvQU+I/fLh59O8EPoM5p0UoFq9eZrAkRCBnIxY=",
+  "Source": "ShopHive.API",
+  "BasePath": "_content/ShopHive.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

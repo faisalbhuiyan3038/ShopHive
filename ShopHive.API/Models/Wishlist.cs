@@ -9,13 +9,13 @@ namespace ShopHive.API.Models
         [ForeignKey("User")]
         public int UserId { get; set; }
 
-        [InverseProperty("Wishlists")]
+        [InverseProperty("WishlistUsers")]
         public User User { get; set; }
 
         [ForeignKey("Product")]
         public string ProductId { get; set; }
 
-        [InverseProperty("Wishlists1")]
+        [InverseProperty("WishlistsProducts")]
         public Product Product { get; set; }
     }
 }

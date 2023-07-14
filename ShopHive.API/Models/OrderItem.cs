@@ -15,7 +15,7 @@ namespace ShopHive.API.Models
         [ForeignKey("Product")]
         public int ProductId { get; set; }
 
-        [InverseProperty("OrderItems1")]
+        [InverseProperty("OrderItemsProducts")]
         public Product Product { get; set; }
 
         public int Quantity { get; set; }

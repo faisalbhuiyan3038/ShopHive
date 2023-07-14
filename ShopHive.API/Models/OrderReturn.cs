@@ -9,6 +9,7 @@ namespace ShopHive.API.Models
         [ForeignKey("Order")]
         public int OrderId { get; set; }
 
+        [InverseProperty("OrderReturns")]
         public Order Order { get; set; }
 
         public string ReturnStatus { get; set; }
