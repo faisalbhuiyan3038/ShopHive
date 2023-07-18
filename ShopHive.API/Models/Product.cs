@@ -10,11 +10,12 @@ namespace ShopHive.API.Models
         public bool IsDeleted { get; set; }
         public decimal Price { get; set; }
         public decimal VATPercent { get; set; }
+        public string ProductImageUrl { get; set; }
 
-        [ForeignKey("Category")]
+        
         public int CategoryId { get; set; }
 
-        [InverseProperty("Products")]
+        
         public Category Category { get; set; }
     }
 }

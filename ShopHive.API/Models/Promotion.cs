@@ -10,10 +10,10 @@ namespace ShopHive.API.Models
         public bool IsActive { get; set; }
         public DateTime ExpiryDate { get; set; }
 
-        [ForeignKey("Product")]
+        
         public int ProductId { get; set; }
 
-        [InverseProperty("Promotions")]
+        
         public Product Product { get; set; }
     }
 }

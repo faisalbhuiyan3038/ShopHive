@@ -6,10 +6,10 @@ namespace ShopHive.API.Models
     {
         public int Id { get; set; }
 
-        [ForeignKey("User")]
+        
         public int UserId { get; set; }
 
-        [InverseProperty("Addresses")]
+        
         public User User { get; set; }
 
         public string Street { get; set; }

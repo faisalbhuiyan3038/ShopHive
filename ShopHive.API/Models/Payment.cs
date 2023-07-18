@@ -6,10 +6,10 @@ namespace ShopHive.API.Models
     {
         public int Id { get; set; }
 
-        [ForeignKey("Order")]
+        
         public int OrderId { get; set; }
 
-        [InverseProperty("Payments")]
+        
         public Order Order { get; set; }
 
         public decimal Amount { get; set; }

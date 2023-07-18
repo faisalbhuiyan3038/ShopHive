@@ -11,10 +11,10 @@ namespace ShopHive.API.Models
 
         public decimal TotalAmount { get; set; }
 
-        [ForeignKey("Product")]
+        
         public int ProductId { get; set; }
 
-        [InverseProperty("Orders")]
+        
         public Product Product { get; set; }
 
 
