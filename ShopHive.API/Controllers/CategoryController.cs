@@ -63,5 +63,31 @@ namespace ShopHive.API.Controllers
 
             return Ok(CategoryDto);
         }
+
+
+        [HttpPost]
+        public IActionResult Create([FromBody] AddCategoryRequestDto addCategoryRequestDto)
+        {
+            //Map or Convert DTO to Domain Model
+            var categoryDomainModel = new Category
+            {
+                Name = addCategoryRequestDto.Name,
+                Description = addCategoryRequestDto.Description,
+            };
+
+            //Use Domain Model to Create Category
+            dbContext.Categories.Add(categoryDomainModel);
+            dbContext.SaveChanges();
+
+            //Map Domain Model Back to DTO
+            var categoryDto = new CategoryDto
+            {
+                Id = categoryDomainModel.Id,
+                Name = categoryDomainModel.Name,
+                Description = categoryDomainModel.Description,
+            };
+
+            return CreatedAtAction(nameof(GetById), new { id = categoryDomainModel.Id }, categoryDomainModel);
+        }
     }
 }
