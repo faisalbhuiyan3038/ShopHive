@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShopHive.API.Data;
 using ShopHive.API.Models;
 using ShopHive.API.Models.DTO;
@@ -19,10 +20,10 @@ namespace ShopHive.API.Controllers
 
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
             // Get Data From Database - Domain Models
-            var Categories = dbContext.Categories.ToList();
+            var Categories = await dbContext.Categories.ToListAsync();
 
             // Map Domain Models to DTOs
             var categoryDto = new List<CategoryDto>();
@@ -45,12 +46,12 @@ namespace ShopHive.API.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        public IActionResult GetById([FromRoute] int id) 
+        public async Task<IActionResult> GetById([FromRoute] int id) 
         {
             //Find() can only be used with the primary key
 
             //Get Category Model from Db
-            var categoryDomain = dbContext.Categories.Find(id);
+            var categoryDomain = await dbContext.Categories.FindAsync(id);
 
             if(categoryDomain == null || categoryDomain.IsDeleted == true)
             {
@@ -70,7 +71,7 @@ namespace ShopHive.API.Controllers
 
 
         [HttpPost]
-        public IActionResult Create([FromBody] AddCategoryRequestDto addCategoryRequestDto)
+        public async Task<IActionResult> Create([FromBody] AddCategoryRequestDto addCategoryRequestDto)
         {
             //Map or Convert DTO to Domain Model
             var categoryDomainModel = new Category
@@ -80,8 +81,8 @@ namespace ShopHive.API.Controllers
             };
 
             //Use Domain Model to Create Category
-            dbContext.Categories.Add(categoryDomainModel);
-            dbContext.SaveChanges();
+            await dbContext.Categories.AddAsync(categoryDomainModel);
+            await dbContext.SaveChangesAsync();
 
             //Map Domain Model Back to DTO
             var categoryDto = new CategoryDto
@@ -96,10 +97,10 @@ namespace ShopHive.API.Controllers
 
         [HttpPut]
         [Route("{id:int}")]
-        public IActionResult Update([FromRoute] int id, [FromBody] UpdateCategoryRequestDto updateCategoryRequestDto)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCategoryRequestDto updateCategoryRequestDto)
         {
             //Check if Category Exists
-            var categoryDomainModel = dbContext.Categories.FirstOrDefault(x => x.Id == id);
+            var categoryDomainModel = await dbContext.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
             if(categoryDomainModel == null || categoryDomainModel.IsDeleted == true)
             {
@@ -110,7 +111,7 @@ namespace ShopHive.API.Controllers
             categoryDomainModel.Name = updateCategoryRequestDto.Name;
             categoryDomainModel.Description = updateCategoryRequestDto.Description;
 
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
 
             //Convert Domain Model to Dto
             var categoryDto = new CategoryDto
@@ -125,10 +126,10 @@ namespace ShopHive.API.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
-        public IActionResult Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
             //Check if Category Exists
-            var categoryDomainModel = dbContext.Categories.FirstOrDefault(x => x.Id == id);
+            var categoryDomainModel = await dbContext.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
             if (categoryDomainModel == null)
             {
@@ -136,7 +137,7 @@ namespace ShopHive.API.Controllers
             }
 
             categoryDomainModel.IsDeleted = true;
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
 
             return Ok(categoryDomainModel);
             
