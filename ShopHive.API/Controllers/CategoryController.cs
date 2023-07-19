@@ -28,12 +28,16 @@ namespace ShopHive.API.Controllers
             var categoryDto = new List<CategoryDto>();
             foreach(var category in Categories)
             {
-                categoryDto.Add(new CategoryDto()
+                if(category.IsDeleted==false)
                 {
-                    Id = category.Id,
-                    Name = category.Name,
-                    Description = category.Description,
-                });
+                    categoryDto.Add(new CategoryDto()
+                    {
+                        Id = category.Id,
+                        Name = category.Name,
+                        Description = category.Description,
+                    });
+                }
+                
             }
 
             return Ok(categoryDto);
@@ -48,7 +52,7 @@ namespace ShopHive.API.Controllers
             //Get Category Model from Db
             var categoryDomain = dbContext.Categories.Find(id);
 
-            if(categoryDomain == null)
+            if(categoryDomain == null || categoryDomain.IsDeleted == true)
             {
                 return NotFound();
             }
@@ -88,6 +92,54 @@ namespace ShopHive.API.Controllers
             };
 
             return CreatedAtAction(nameof(GetById), new { id = categoryDomainModel.Id }, categoryDomainModel);
+        }
+
+        [HttpPut]
+        [Route("{id:int}")]
+        public IActionResult Update([FromRoute] int id, [FromBody] UpdateCategoryRequestDto updateCategoryRequestDto)
+        {
+            //Check if Category Exists
+            var categoryDomainModel = dbContext.Categories.FirstOrDefault(x => x.Id == id);
+
+            if(categoryDomainModel == null || categoryDomainModel.IsDeleted == true)
+            {
+                return NotFound();
+            }
+
+            //Map Dto to Domain Model
+            categoryDomainModel.Name = updateCategoryRequestDto.Name;
+            categoryDomainModel.Description = updateCategoryRequestDto.Description;
+
+            dbContext.SaveChanges();
+
+            //Convert Domain Model to Dto
+            var categoryDto = new CategoryDto
+            {
+                Id = categoryDomainModel.Id,
+                Name = categoryDomainModel.Name,
+                Description = categoryDomainModel.Description,
+            };
+
+            return Ok(categoryDto);
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            //Check if Category Exists
+            var categoryDomainModel = dbContext.Categories.FirstOrDefault(x => x.Id == id);
+
+            if (categoryDomainModel == null)
+            {
+                return NotFound();
+            }
+
+            categoryDomainModel.IsDeleted = true;
+            dbContext.SaveChanges();
+
+            return Ok(categoryDomainModel);
+            
         }
     }
 }
