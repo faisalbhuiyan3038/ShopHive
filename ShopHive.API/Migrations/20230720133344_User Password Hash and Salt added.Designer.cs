@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShopHive.API.Data;
 
@@ -11,9 +12,11 @@ using ShopHive.API.Data;
 namespace ShopHive.API.Migrations
 {
     [DbContext(typeof(ShopHiveDbContext))]
-    partial class ShopHiveDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230720133344_User Password Hash and Salt added")]
+    partial class UserPasswordHashandSaltadded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

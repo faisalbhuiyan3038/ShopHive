@@ -14,6 +14,7 @@ namespace ShopHive.API.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+
         private readonly ShopHiveDbContext dbContext;
 
         public UserController(ShopHiveDbContext dbContext)
@@ -21,9 +22,9 @@ namespace ShopHive.API.Controllers
             this.dbContext = dbContext;
         }
 
-
+        
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<IActionResult> GetUsers()
         {
             var Users = await dbContext.Users.ToListAsync();
 
@@ -31,7 +32,8 @@ namespace ShopHive.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<User>> GetUser(int id) { 
+        [Route("{id:int}")]
+        public async Task<IActionResult> GetUser(int id) { 
             var user = await dbContext.Users.FirstOrDefaultAsync(x => x.Id == id);
 
             if(user == null)
