@@ -10,9 +10,7 @@ using System.Runtime.Intrinsics.X86;
 
 namespace ShopHive.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : BaseAPIController
     {
 
         private readonly ShopHiveDbContext dbContext;
