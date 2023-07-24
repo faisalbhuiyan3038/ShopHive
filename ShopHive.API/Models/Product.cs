@@ -9,7 +9,6 @@ namespace ShopHive.API.Models
         public string Description { get; set; }
         public bool IsDeleted { get; set; }
         public decimal Price { get; set; }
-        public decimal VATPercent { get; set; }
         public string ProductImageUrl { get; set; }
 
         
