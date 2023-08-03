@@ -19,14 +19,14 @@ namespace ShopHive.API.Controllers
             this.dbContext = dbContext;
         }
 
-        
+
 
         [HttpGet]
-        public async Task<IActionResult> GetProducts()
+        public async Task<IActionResult> GetProducts(string categoryName, string sortBy)
         {
-            var products = await repo.GetProductsAsync();
-
+            var products = await repo.GetProductsAsync(categoryName);
             return Ok(products);
+
         }
 
         [HttpGet("{id}")]
