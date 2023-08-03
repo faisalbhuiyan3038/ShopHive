@@ -24,7 +24,7 @@ namespace ShopHive.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProducts(string categoryName, string sortBy)
         {
-            var products = await repo.GetProductsAsync(categoryName);
+            var products = await repo.GetProductsAsync(categoryName,sortBy);
             return Ok(products);
 
         }

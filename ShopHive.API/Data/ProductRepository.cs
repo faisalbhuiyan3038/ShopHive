@@ -19,7 +19,7 @@ namespace ShopHive.API.Data
 
         public async Task<IReadOnlyList<Product>> GetProductsAsync(string categoryName, string sortBy)
         {
-            if(categoryName == "none")
+            if(categoryName == "All")
             {
                 switch(sortBy)
                 {
