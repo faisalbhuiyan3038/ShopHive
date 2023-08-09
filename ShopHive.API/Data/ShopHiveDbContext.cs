@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShopHive.API.Models;
+using ShopHive.API.Models.Identity;
 
 namespace ShopHive.API.Data
 {
