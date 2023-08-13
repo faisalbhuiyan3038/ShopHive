@@ -93,6 +93,72 @@ namespace ShopHive.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = categoryDomainModel.Id }, categoryDomainModel);
         }
 
+        //This is for adding seed data if the db ever needs to be deleted.
+        /*[HttpPost]
+        public async Task<IActionResult> AddSEEDCategories()
+        {
+            //Map or Convert DTO to Domain Model
+            List<AddCategoryRequestDto> categoryDtos = new()
+            {
+                new AddCategoryRequestDto
+                {
+                    Name = "Accessories",
+                    Description = "Phone Covers, Watches"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Smartphones",
+                    Description = "Handheld device"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Food And Beverage",
+                    Description = "Snacks and Fruit"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Gadgets",
+                    Description = "Mini Electronic Devices"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Smartphones",
+                    Description = "Handheld device"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Cosmetics and Body Care",
+                    Description = "Self-Improvement Products"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Household Items",
+                    Description = "Essential things that exist in every household"
+                },
+                new AddCategoryRequestDto
+                {
+                    Name = "Fashion",
+                    Description =  "Improve physical appearance"
+                }
+            };
+
+            foreach (var categoryDto in categoryDtos)
+            {
+                var category = new Category
+                {
+                    Name = categoryDto.Name,
+                    Description = categoryDto.Description
+                };
+
+                await dbContext.Categories.AddAsync(category);
+            }
+            
+            await dbContext.SaveChangesAsync();
+
+
+            return Ok();
+        }*/
+
         [HttpPut]
         [Route("{id:int}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCategoryRequestDto updateCategoryRequestDto)

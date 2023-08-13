@@ -1,4 +1,4 @@
-﻿using ShopHive.API.Models.Identity;
+﻿
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopHive.API.Models
@@ -7,8 +7,8 @@ namespace ShopHive.API.Models
     {
         public int Id { get; set; }
 
-       public string AppUserId { get; set; }
-        public AppUser AppUser { get; set; }
+       public int UserId { get; set; }
+        public User User { get; set; }
 
         
         public int ProductId { get; set; }
