@@ -5,7 +5,7 @@ namespace ShopHive.API.Data
 {
     public class ShopHiveDbContext:DbContext
     {
-        public ShopHiveDbContext(DbContextOptions dbContextOptions):base(dbContextOptions)
+        public ShopHiveDbContext(DbContextOptions<ShopHiveDbContext> dbContextOptions):base(dbContextOptions)
         {
                 
         }
