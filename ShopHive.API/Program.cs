@@ -6,6 +6,7 @@ using Microsoft.OpenApi.Writers;
 using ShopHive.API.Data;
 using ShopHive.API.Interfaces;
 using System.Text;
+using ShopHive.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,17 @@ builder.Services.AddDbContext<ShopHiveAuthDbContext>(options => options.UseSqlSe
 
 
 builder.Services.AddCors();
+
+builder.Services.AddIdentityCore<IdentityUser>().AddRoles<IdentityRole>().AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("ShopHive").AddEntityFrameworkStores<ShopHiveAuthDbContext>().AddDefaultTokenProviders();
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 6; 
+    options.Password.RequireLowercase = false;
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
 {
