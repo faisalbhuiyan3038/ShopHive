@@ -38,10 +38,10 @@ namespace ShopHive.API.Controllers
             return Ok();
         }
 
-        [HttpGet(" badRequest")]
+        [HttpGet("badRequest")]
         public ActionResult GetBadRequest()
         {
-            return BadRequest();
+            return BadRequest(new ApiResponse(400));
         }
 
         [HttpGet("badRequest/{id}")]

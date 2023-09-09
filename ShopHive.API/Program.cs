@@ -8,6 +8,10 @@ using ShopHive.API.Interfaces;
 using System.Text;
 using ShopHive.API.Models;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Builder;
+using ShopHive.API.Middleware;
+using Microsoft.AspNetCore.Mvc;
+using ShopHive.API.Errors;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +50,23 @@ builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddDbContext<ShopHiveDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShopHiveConnectionString")));
 builder.Services.AddDbContext<ShopHiveAuthDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShopHiveAuthConnectionString")));
 
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.InvalidModelStateResponseFactory = actionContext =>
+    {
+        var errors = actionContext.ModelState
+            .Where(e => e.Value.Errors.Count > 0)
+            .SelectMany(x => x.Value.Errors)
+            .Select(x => x.ErrorMessage).ToArray();
+
+        var errorResponse = new ApiValidationErrorResponse
+        {
+            Errors = errors
+        };
+
+        return new BadRequestObjectResult(errorResponse);
+    };
+});
 
 builder.Services.AddCors();
 
@@ -73,12 +94,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
 app.UseHttpsRedirection();
 

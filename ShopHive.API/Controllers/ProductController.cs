@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShopHive.API.Data;
+using ShopHive.API.Errors;
 using ShopHive.API.Interfaces;
 using ShopHive.API.Models;
 using ShopHive.API.Models.DTO;
@@ -30,9 +31,13 @@ namespace ShopHive.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse) ,StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetProduct(int id)
         {
             var product = await repo.GetProductByIdAsync(id);
+
+            if (product == null) return NotFound(new ApiResponse(404));
 
             return Ok(product);
         }
