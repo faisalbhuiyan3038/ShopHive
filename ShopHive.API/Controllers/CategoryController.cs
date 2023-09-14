@@ -122,11 +122,6 @@ namespace ShopHive.API.Controllers
         //        },
         //        new AddCategoryRequestDto
         //        {
-        //            Name = "Smartphones",
-        //            Description = "Handheld device"
-        //        },
-        //        new AddCategoryRequestDto
-        //        {
         //            Name = "Cosmetics and Body Care",
         //            Description = "Self-Improvement Products"
         //        },
