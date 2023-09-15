@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Builder;
 using ShopHive.API.Middleware;
 using Microsoft.AspNetCore.Mvc;
 using ShopHive.API.Errors;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -90,6 +91,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     ValidIssuer = builder.Configuration["Jwt:Issuer"],
     ValidAudience = builder.Configuration["Jwt:Audience"],
     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+});
+
+builder.Services.AddSingleton<ConnectionMultiplexer>(c =>
+{
+    var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"),true);
+    return ConnectionMultiplexer.Connect(configuration);
 });
 
 var app = builder.Build();
