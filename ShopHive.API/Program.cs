@@ -47,6 +47,8 @@ builder.Services.AddSwaggerGen(options =>
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+
 
 builder.Services.AddDbContext<ShopHiveDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShopHiveConnectionString")));
 builder.Services.AddDbContext<ShopHiveAuthDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShopHiveAuthConnectionString")));
@@ -93,7 +95,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
 });
 
-builder.Services.AddSingleton<ConnectionMultiplexer>(c =>
+//this may be the problem
+builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
 {
     var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"),true);
     return ConnectionMultiplexer.Connect(configuration);

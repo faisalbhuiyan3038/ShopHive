@@ -29,8 +29,8 @@ namespace ShopHive.API.Data
 
         async Task<CustomerBasket> IBasketRepository.UpdateBasketAsync(CustomerBasket basket)
         {
-            var expirationTime = TimeSpan.FromDays(30);
-            var created = await _database.StringSetAsync(basket.Id, JsonSerializer.Serialize(basket), expirationTime);
+            var created = await _database.StringSetAsync(basket.Id,
+                JsonSerializer.Serialize(basket), TimeSpan.FromDays(30));
 
             if (!created) return null;
 
