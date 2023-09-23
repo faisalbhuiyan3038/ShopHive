@@ -24,6 +24,10 @@ namespace ShopHive.API.Controllers
             {
                 return BadRequest("Username is taken.");
             }
+            else if(await EmailExists(registerDto.Email.ToLowerInvariant()))
+            {
+                return BadRequest("Email is already in use.");
+            }
 
             using var hmac = new HMACSHA512();
 
@@ -48,6 +52,11 @@ namespace ShopHive.API.Controllers
         private async Task<bool> UserExists(string username)
         {
             return await dbContext.Users.AnyAsync(x => x.UserName == username.ToLower());
+        }
+
+        private async Task<bool> EmailExists(string email)
+        {
+            return await dbContext.Users.AnyAsync(x => x.Email == email.ToLower());
         }
 
         [HttpDelete]
