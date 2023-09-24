@@ -93,3 +93,4 @@ D:\Users\Admin\Source\Repos\ShopHive\ShopHive.API\obj\Debug\net6.0\ShopHive.API.
 D:\Users\Admin\Source\Repos\ShopHive\ShopHive.API\obj\Debug\net6.0\ref\ShopHive.API.dll
 D:\Users\Admin\Source\Repos\ShopHive\ShopHive.API\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
 D:\Users\Admin\Source\Repos\ShopHive\ShopHive.API\bin\Debug\net6.0\StackExchange.Redis.dll
+D:\Users\Admin\Source\Repos\ShopHive\ShopHive.API\bin\Debug\net6.0\AutoMapper.dll

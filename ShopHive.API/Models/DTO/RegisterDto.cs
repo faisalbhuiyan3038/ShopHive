@@ -10,7 +10,7 @@ namespace ShopHive.API.Models.DTO
         [EmailAddress]
         public string Email { get; set; }
         [Required]
-        [RegularExpression("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\s).{4,8}$", ErrorMessage = "Password requires one lower case letter, one upper case letter, one digit, 6-13 length, and no spaces.")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,13}$", ErrorMessage = "Password requires one lowercase letter, one uppercase letter, one digit, 6-13 length.")]
         public string Password { get; set; }
         [Required]
         public string FirstName { get; set; }

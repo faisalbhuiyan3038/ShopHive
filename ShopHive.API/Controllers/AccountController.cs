@@ -1,20 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using ShopHive.API.Data;
 using ShopHive.API.Models;
 using ShopHive.API.Models.DTO;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace ShopHive.API.Controllers
 {
-    public class AccountController:BaseAPIController
+    public class AccountController : BaseAPIController
     {
         private readonly ShopHiveDbContext dbContext;
+        private readonly IConfiguration _configuration;
 
-        public AccountController(ShopHiveDbContext dbContext)
+        public AccountController(ShopHiveDbContext dbContext, IConfiguration configuration)
         {
             this.dbContext = dbContext;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -24,7 +30,7 @@ namespace ShopHive.API.Controllers
             {
                 return BadRequest("Username is taken.");
             }
-            else if(await EmailExists(registerDto.Email.ToLowerInvariant()))
+            else if (await EmailExists(registerDto.Email.ToLowerInvariant()))
             {
                 return BadRequest("Email is already in use.");
             }
@@ -38,7 +44,7 @@ namespace ShopHive.API.Controllers
                 FirstName = registerDto.FirstName,
                 LastName = registerDto.LastName,
                 Mobile = registerDto.Mobile,
-                Address =   registerDto.Address,
+                Address = registerDto.Address,
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt = hmac.Key
             };
@@ -71,12 +77,37 @@ namespace ShopHive.API.Controllers
             return Ok();
         }
 
+        //[HttpPost("login")]
+        //public async Task<IActionResult> Login(LoginDto loginDto)
+        //{
+        //    var user = await dbContext.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.UserName);
+
+        //    if(user == null)
+        //    {
+        //        return Unauthorized("Invalid User");
+        //    }
+
+        //    using var hmac = new HMACSHA512(user.PasswordSalt);
+
+        //    var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
+
+        //    for(int i=0; i<computedHash.Length; i++)
+        //    {
+        //        if (computedHash[i] != user.PasswordHash[i])
+        //        {
+        //            return Unauthorized("Invalid Password");
+        //        }
+        //    }
+
+        //    return Ok(user);
+        //}
+
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto loginDto)
         {
             var user = await dbContext.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.UserName);
 
-            if(user == null)
+            if (user == null)
             {
                 return Unauthorized("Invalid User");
             }
@@ -85,7 +116,7 @@ namespace ShopHive.API.Controllers
 
             var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
 
-            for(int i=0; i<computedHash.Length; i++)
+            for (int i = 0; i < computedHash.Length; i++)
             {
                 if (computedHash[i] != user.PasswordHash[i])
                 {
@@ -93,7 +124,23 @@ namespace ShopHive.API.Controllers
                 }
             }
 
-            return Ok(user);
+            // User is authenticated, generate a JWT token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration.GetSection("Jwt:Key").Value);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+            new Claim(ClaimTypes.Name, user.UserName),
+            // Add more claims as needed
+        }),
+                Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            return Ok(new { Token = tokenString });
         }
     }
 }
