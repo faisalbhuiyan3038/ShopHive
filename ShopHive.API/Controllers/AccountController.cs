@@ -131,16 +131,26 @@ namespace ShopHive.API.Controllers
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-            new Claim(ClaimTypes.Name, user.UserName),
-            // Add more claims as needed
-        }),
+        new Claim(ClaimTypes.Name, user.UserName),
+        // Add more claims as needed
+    }),
                 Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            return Ok(new { Token = tokenString });
+            // Create the response object with email and userName
+            var responseObj = new
+            {
+                email = user.Email,
+                userName = user.UserName,
+                token = tokenString
+            };
+
+            return Ok(responseObj);
+
         }
     }
 }
