@@ -18,7 +18,7 @@ namespace ShopHive.API.Controllers
 
         //POST: /api/Auth/Register
         [HttpPost]
-        [Route("Register")]
+        [Route("IdentityRegister")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto registerRequestDto)
         {
             var identityUser = new IdentityUser
@@ -48,35 +48,35 @@ namespace ShopHive.API.Controllers
         }
 
         //POST: /api/Auth/Login
-        [HttpPost]
-        [Route("Login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequestDto)
-        {
-            var user = await userManager.FindByEmailAsync(loginRequestDto.Username);
+        //[HttpPost]
+        //[Route("IdentityLogin")]
+        //public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequestDto)
+        //{
+        //    var user = await userManager.FindByEmailAsync(loginRequestDto.Username);
 
-            if(user != null)
-            {
-                var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+        //    if(user != null)
+        //    {
+        //        var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
 
-                if (checkPasswordResult)
-                {
-                    //Get Roles for this user
-                    var roles = await userManager.GetRolesAsync(user);
+        //        if (checkPasswordResult)
+        //        {
+        //            //Get Roles for this user
+        //            var roles = await userManager.GetRolesAsync(user);
 
-                    if(roles != null)
-                    {
-                        //Create Token
-                        var jwtToken = tokenRepository.CreateJwtToken(user, roles.ToList());
-                        var response = new LoginResponseDto
-                        {
-                            JwtToken = jwtToken,
-                        };
-                        return Ok(response);
-                    }
-                }
-            }
+        //            if(roles != null)
+        //            {
+        //                //Create Token
+        //                var jwtToken = tokenRepository.CreateJwtToken(user);
+        //                var response = new LoginResponseDto
+        //                {
+        //                    JwtToken = jwtToken,
+        //                };
+        //                return Ok(response);
+        //            }
+        //        }
+        //    }
 
-            return BadRequest("Username or password incorrect");
-        }
+        //    return BadRequest("Username or password incorrect");
+        //}
     }
 }

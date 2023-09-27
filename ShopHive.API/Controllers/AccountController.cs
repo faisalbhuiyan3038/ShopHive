@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using ShopHive.API.Interfaces;
 
 namespace ShopHive.API.Controllers
 {
@@ -16,11 +17,13 @@ namespace ShopHive.API.Controllers
     {
         private readonly ShopHiveDbContext dbContext;
         private readonly IConfiguration _configuration;
+        private readonly ITokenRepository tokenRepository;
 
-        public AccountController(ShopHiveDbContext dbContext, IConfiguration configuration)
+        public AccountController(ShopHiveDbContext dbContext, IConfiguration configuration, ITokenRepository tokenRepository)
         {
             this.dbContext = dbContext;
             _configuration = configuration;
+            this.tokenRepository = tokenRepository;
         }
 
         [HttpPost("register")]
@@ -105,7 +108,7 @@ namespace ShopHive.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto loginDto)
         {
-            var user = await dbContext.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.UserName);
+            User user = await dbContext.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.UserName);
 
             if (user == null)
             {
@@ -125,21 +128,22 @@ namespace ShopHive.API.Controllers
             }
 
             // User is authenticated, generate a JWT token
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration.GetSection("Jwt:Key").Value);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new[]
-                {
-        new Claim(ClaimTypes.Name, user.UserName),
-        // Add more claims as needed
-    }),
-                Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
-            };
+            //        var tokenHandler = new JwtSecurityTokenHandler();
+            //        var key = Encoding.ASCII.GetBytes(_configuration.GetSection("Jwt:Key").Value);
+            //        var tokenDescriptor = new SecurityTokenDescriptor
+            //        {
+            //            Subject = new ClaimsIdentity(new[]
+            //            {
+            //    new Claim(ClaimTypes.Name, user.UserName),
+            //    // Add more claims as needed
+            //}),
+            //            Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
+            //            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+            //        };
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
+            //        var token = tokenHandler.CreateToken(tokenDescriptor);
+            //        var tokenString = tokenHandler.WriteToken(token);
+            var tokenString = tokenRepository.CreateJwtToken(user);
 
             // Create the response object with email and userName
             var responseObj = new
