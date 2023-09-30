@@ -10,6 +10,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using ShopHive.API.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShopHive.API.Controllers
 {
@@ -24,6 +25,24 @@ namespace ShopHive.API.Controllers
             this.dbContext = dbContext;
             _configuration = configuration;
             this.tokenRepository = tokenRepository;
+        }
+
+        [Authorize]
+        [HttpGet]
+
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            var userName = User.FindFirstValue(ClaimTypes.Name);
+            var user = await dbContext.Users.SingleOrDefaultAsync(x => x.UserName == userName);
+
+            var responseObj = new
+            {
+                email = user.Email,
+                userName = user.UserName,
+                token = tokenRepository.CreateJwtToken(user),
+            };
+
+            return Ok(responseObj);
         }
 
         [HttpPost("register")]
@@ -126,23 +145,7 @@ namespace ShopHive.API.Controllers
                     return Unauthorized("Invalid Password");
                 }
             }
-
-            // User is authenticated, generate a JWT token
-            //        var tokenHandler = new JwtSecurityTokenHandler();
-            //        var key = Encoding.ASCII.GetBytes(_configuration.GetSection("Jwt:Key").Value);
-            //        var tokenDescriptor = new SecurityTokenDescriptor
-            //        {
-            //            Subject = new ClaimsIdentity(new[]
-            //            {
-            //    new Claim(ClaimTypes.Name, user.UserName),
-            //    // Add more claims as needed
-            //}),
-            //            Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
-            //            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
-            //        };
-
-            //        var token = tokenHandler.CreateToken(tokenDescriptor);
-            //        var tokenString = tokenHandler.WriteToken(token);
+            
             var tokenString = tokenRepository.CreateJwtToken(user);
 
             // Create the response object with email and userName
@@ -158,3 +161,19 @@ namespace ShopHive.API.Controllers
         }
     }
 }
+// User is authenticated, generate a JWT token
+//        var tokenHandler = new JwtSecurityTokenHandler();
+//        var key = Encoding.ASCII.GetBytes(_configuration.GetSection("Jwt:Key").Value);
+//        var tokenDescriptor = new SecurityTokenDescriptor
+//        {
+//            Subject = new ClaimsIdentity(new[]
+//            {
+//    new Claim(ClaimTypes.Name, user.UserName),
+//    // Add more claims as needed
+//}),
+//            Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
+//            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+//        };
+
+//        var token = tokenHandler.CreateToken(tokenDescriptor);
+//        var tokenString = tokenHandler.WriteToken(token);
