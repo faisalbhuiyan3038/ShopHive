@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using ShopHive.API.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using ShopHive.API.Errors;
 
 namespace ShopHive.API.Controllers
 {
@@ -131,7 +132,8 @@ namespace ShopHive.API.Controllers
 
             if (user == null)
             {
-                return Unauthorized("Invalid User");
+                var apiResponse = new ApiResponse(401, "Wrong credentials");
+                return apiResponse.ToActionResult();
             }
 
             using var hmac = new HMACSHA512(user.PasswordSalt);
@@ -142,7 +144,8 @@ namespace ShopHive.API.Controllers
             {
                 if (computedHash[i] != user.PasswordHash[i])
                 {
-                    return Unauthorized("Invalid Password");
+                    var apiResponse = new ApiResponse(401, "Wrong credentials");
+                    return apiResponse.ToActionResult();
                 }
             }
             
