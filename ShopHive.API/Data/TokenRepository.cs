@@ -37,5 +37,25 @@ namespace ShopHive.API.Data
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        string ITokenRepository.CreateJwtToken(AdminUser user)
+        {
+
+            var claims = new List<Claim>();
+
+            claims.Add(new Claim(ClaimTypes.Email, user.email));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
+
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                configuration["Jwt:Issuer"],
+                configuration["Jwt:Audience"],
+                claims,
+                expires: DateTime.Now.AddMinutes(30),
+                signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
     }
 }

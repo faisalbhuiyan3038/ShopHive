@@ -24,5 +24,6 @@ namespace ShopHive.API.Data
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Wishlist> Wishlist { get; set; }
+        public DbSet<AdminUser> AdminUsers { get; set; }
     }
 }

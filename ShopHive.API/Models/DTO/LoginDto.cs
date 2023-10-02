@@ -2,7 +2,7 @@
 
 namespace ShopHive.API.Models.DTO
 {
-    public class LoginDto
+    public class AdminUserDto
     {
         [Required]
         public string UserName { get; set; }

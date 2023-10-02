@@ -126,7 +126,7 @@ namespace ShopHive.API.Controllers
         //}
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginDto loginDto)
+        public async Task<IActionResult> Login(AdminUserDto loginDto)
         {
             User user = await dbContext.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.UserName);
 

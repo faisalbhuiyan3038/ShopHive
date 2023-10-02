@@ -6,5 +6,6 @@ namespace ShopHive.API.Interfaces
     public interface ITokenRepository
     {
         string CreateJwtToken(User user);
+        string CreateJwtToken(AdminUser user);
     }
 }
