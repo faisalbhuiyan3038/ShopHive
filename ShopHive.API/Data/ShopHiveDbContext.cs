@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShopHive.API.Models;
+using ShopHive.API.Models.OrderAggregate;
+using System.Reflection;
 
 namespace ShopHive.API.Data
 {
@@ -12,18 +14,30 @@ namespace ShopHive.API.Data
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<Stock> Stocks { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Address> Addresses { get; set; }
-        public DbSet<Cart> Carts { get; set; }
-        public DbSet<CartProduct> CartProducts { get; set; }
-        public DbSet<Promotion> Promotions { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
-        public DbSet<OrderReturn> OrderReturns { get; set; }
-        public DbSet<Payment> Payments { get; set; }
-        public DbSet<Review> Reviews { get; set; }
-        public DbSet<Wishlist> Wishlist { get; set; }
         public DbSet<AdminUser> AdminUsers { get; set; }
+        public DbSet<DeliveryMethod> DeliveryMethods { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            if (Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
+            {
+                foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+                {
+                    var properties = entityType.ClrType.GetProperties().Where(p => p.PropertyType == typeof(decimal));
+
+                    foreach (var property in properties)
+                    {
+                        modelBuilder.Entity(entityType.Name).Property(property.Name).HasConversion<double>();
+                    }
+                }
+            }
+        }
+
     }
 }

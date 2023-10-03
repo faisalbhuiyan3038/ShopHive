@@ -45,6 +45,8 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped(typeof(IGenericRepository<>),(typeof(GenericRepository<>)));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
