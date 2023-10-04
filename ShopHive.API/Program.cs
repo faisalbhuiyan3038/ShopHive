@@ -13,6 +13,8 @@ using ShopHive.API.Middleware;
 using Microsoft.AspNetCore.Mvc;
 using ShopHive.API.Errors;
 using StackExchange.Redis;
+using ShopHive.API.Helpers;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,6 +50,7 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped(typeof(IGenericRepository<>),(typeof(GenericRepository<>)));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
 
@@ -103,6 +106,14 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
     var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"),true);
     return ConnectionMultiplexer.Connect(configuration);
 });
+var mapperConfig = new MapperConfiguration(cfg =>
+{
+    cfg.AddProfile<MappingProfiles>(); // Use your existing MappingProfiles class
+});
+
+IMapper mapper = mapperConfig.CreateMapper();
+
+builder.Services.AddSingleton(mapper);
 
 var app = builder.Build();
 

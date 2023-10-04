@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ShopHive.API.Models;
 using ShopHive.API.Models.DTO;
+using ShopHive.API.Models.OrderAggregate;
 
 namespace ShopHive.API.Helpers
 {
@@ -10,6 +11,7 @@ namespace ShopHive.API.Helpers
         {
             CreateMap<CustomerBasketDto, CustomerBasket>();
             CreateMap<BasketItemDto, BasketItem>();
+            CreateMap<AddressDto, Address>();
         }
     }
 }

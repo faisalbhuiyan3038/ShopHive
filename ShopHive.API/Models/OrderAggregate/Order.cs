@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopHive.API.Models.OrderAggregate
 {
@@ -19,6 +20,16 @@ namespace ShopHive.API.Models.OrderAggregate
             PaymentIntentId = paymentIntentId;
         }
 
+        public Order(IReadOnlyList<OrderItem> orderItems, string buyerEmail, Address shipToAddress,
+            DeliveryMethod deliveryMethod, decimal subtotal)
+        {
+            BuyerEmail = buyerEmail;
+            ShipToAddress = shipToAddress;
+            DeliveryMethod = deliveryMethod;
+            OrderItems = orderItems;
+            Subtotal = subtotal;
+        }
+
         public string BuyerEmail { get; set; }
         public DateTime OrderDate { get; set; } = DateTime.UtcNow;
         public Address ShipToAddress { get; set; }
@@ -26,6 +37,8 @@ namespace ShopHive.API.Models.OrderAggregate
         public IReadOnlyList<OrderItem> OrderItems { get; set; }
         public decimal Subtotal { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
+
+        [DefaultValue("Nothing")]
         public string PaymentIntentId { get; set; }
 
         public decimal GetTotal()
