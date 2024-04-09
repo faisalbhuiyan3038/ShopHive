@@ -1,0 +1,861 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ShopHive\\ShopHive\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\seeddata\\delivery.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\seeddata\\delivery.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\helpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\helpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\ordertoreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\ordertoreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\orderaggregate\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\shophivedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\shophivedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\specifications\\orderswithitemsandorderingspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\specifications\\orderswithitemsandorderingspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\specifications\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\specifications\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\specifications\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\specifications\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\orderaggregate\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\orderaggregate\\productitemordered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\orderaggregate\\productitemordered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\orderaggregate\\deliverymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\orderaggregate\\deliverymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\config\\deliverymethodconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\config\\deliverymethodconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\config\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\config\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\config\\orderitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\config\\orderitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\shophivedbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\shophivedbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\orderaggregate\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\orderaggregate\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\interfaces\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\interfaces\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\registeradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\registeradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\errors\\apiresponseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\errors\\apiresponseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\errors\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\errors\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\errors\\apivalidationerrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\errors\\apivalidationerrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\data\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\data\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|d:\\shophive\\shophive\\shophive.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{371923C8-E7E6-448D-BB52-54758A52718B}|ShopHive.API\\ShopHive.API.csproj|solutionrelative:shophive.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "delivery.json",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\SeedData\\delivery.json",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\SeedData\\delivery.json",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\SeedData\\delivery.json",
+              "RelativeToolTip": "ShopHive.API\\Data\\SeedData\\delivery.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-10T12:52:45.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:49.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\Order.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\OrderAggregate\\Order.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\Order.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\OrderAggregate\\Order.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAuwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderToReturnDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\OrderToReturnDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\OrderToReturnDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\OrderToReturnDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\OrderToReturnDto.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwBEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Program.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Program.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Program.cs",
+              "RelativeToolTip": "ShopHive.API\\Program.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAwwHMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwGIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Helpers\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Helpers\\MappingProfiles.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Helpers\\MappingProfiles.cs",
+              "RelativeToolTip": "ShopHive.API\\Helpers\\MappingProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ShopHive.API\\appsettings.json",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\appsettings.json",
+              "RelativeToolTip": "ShopHive.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-10T12:34:50.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\OrderItemDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\OrderItemDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\OrderItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ISpecification.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Specifications\\ISpecification.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Specifications\\ISpecification.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Specifications\\ISpecification.cs",
+              "RelativeToolTip": "ShopHive.API\\Specifications\\ISpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\Product.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\Product.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\OrderService.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\OrderService.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\OrderService.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\OrderService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAADgvyIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShopHiveDbContext.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\ShopHiveDbContext.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\ShopHiveDbContext.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\ShopHiveDbContext.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\ShopHiveDbContext.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwBkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrdersWithItemsAndOrderingSpecification.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Specifications\\OrdersWithItemsAndOrderingSpecification.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Specifications\\OrdersWithItemsAndOrderingSpecification.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Specifications\\OrdersWithItemsAndOrderingSpecification.cs",
+              "RelativeToolTip": "ShopHive.API\\Specifications\\OrdersWithItemsAndOrderingSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseSpecification.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Specifications\\BaseSpecification.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Specifications\\BaseSpecification.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Specifications\\BaseSpecification.cs",
+              "RelativeToolTip": "ShopHive.API\\Specifications\\BaseSpecification.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAA2wDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "ShopHive.API\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAUwA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\UnitOfWork.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\UnitOfWork.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAQwGAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "ShopHive.API\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\GenericRepository.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\GenericRepository.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\GenericRepository.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAIBJwDwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAgwGEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAIwGEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\OrderDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\OrderDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\OrderDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\OrderDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DeliveryMethod.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\DeliveryMethod.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\OrderAggregate\\DeliveryMethod.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\DeliveryMethod.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\OrderAggregate\\DeliveryMethod.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SpecificationEvaluator.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\SpecificationEvaluator.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\SpecificationEvaluator.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\SpecificationEvaluator.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\SpecificationEvaluator.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCIAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductItemOrdered.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\ProductItemOrdered.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\OrderAggregate\\ProductItemOrdered.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\ProductItemOrdered.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\OrderAggregate\\ProductItemOrdered.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\OrderItem.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\OrderAggregate\\OrderItem.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\OrderItem.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\OrderAggregate\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAABBwBMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Interfaces\\IOrderService.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "ShopHive.API\\Interfaces\\IOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\BaseEntity.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DeliveryMethodConfiguration.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\Config\\DeliveryMethodConfiguration.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\Config\\DeliveryMethodConfiguration.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\Config\\DeliveryMethodConfiguration.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\Config\\DeliveryMethodConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrderConfiguration.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\Config\\OrderConfiguration.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\Config\\OrderConfiguration.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\Config\\OrderConfiguration.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\Config\\OrderConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OrderItemConfiguration.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\Config\\OrderItemConfiguration.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\Config\\OrderItemConfiguration.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\Config\\OrderItemConfiguration.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\Config\\OrderItemConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ShopHiveDbContextSeed.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\ShopHiveDbContextSeed.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\ShopHiveDbContextSeed.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\ShopHiveDbContextSeed.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\ShopHiveDbContextSeed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\OrderAggregate\\OrderStatus.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\OrderAggregate\\OrderStatus.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\OrderAggregate\\OrderStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RegisterAdminDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\RegisterAdminDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\RegisterAdminDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\RegisterAdminDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\RegisterAdminDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\RegisterDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ITokenRepository.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\ITokenRepository.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Interfaces\\ITokenRepository.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Interfaces\\ITokenRepository.cs",
+              "RelativeToolTip": "ShopHive.API\\Interfaces\\ITokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ApiValidationErrorResponse.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Errors\\ApiValidationErrorResponse.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Errors\\ApiValidationErrorResponse.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Errors\\ApiValidationErrorResponse.cs",
+              "RelativeToolTip": "ShopHive.API\\Errors\\ApiValidationErrorResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\LoginRequestDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\LoginRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApiResponseExtensions.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Errors\\ApiResponseExtensions.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Errors\\ApiResponseExtensions.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Errors\\ApiResponseExtensions.cs",
+              "RelativeToolTip": "ShopHive.API\\Errors\\ApiResponseExtensions.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Errors\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Errors\\ApiResponse.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Errors\\ApiResponse.cs",
+              "RelativeToolTip": "ShopHive.API\\Errors\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\User.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\User.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\LoginDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\JwtService.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Data\\JwtService.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Data\\JwtService.cs",
+              "RelativeToolTip": "ShopHive.API\\Data\\JwtService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "ShopHive.API\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeToolTip": "ShopHive.API\\Models\\DTO\\RegisterRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\ErrorController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\ErrorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ShopHive.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\ShopHive\\ShopHive\\ShopHive.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ShopHive.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAEwEwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:34:50.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

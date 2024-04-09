@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopHive.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be46abd5b233360f1aac6a3e1ee46306e14f54a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopHive.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopHive.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
